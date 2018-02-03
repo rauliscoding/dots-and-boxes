@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DotsAndBoxes</title>
+        <link rel="stylesheet" type="text/css" href="trab1.css">
+        <script src="trab1.js"></script>
+    </head>
+    <body>	 
+   
+		<div id="menu">
+			
+			<div id="title"><strong>Dots and Boxes</strong></div>
+			
+			<div id="login">
+				<span>Login</span>
+				<br>
+				<form action="javascript:check_login();">
+					<input type="text" placeholder="Username" id="username" maxlength="8">
+  					<input type="password" placeholder="Password" id="password">
+					<input type="submit" value="Sign In" id="submit">
+				</form>
+				<span id="error"></span>
+				<br>
+				<div id="mode"> <button onclick="off_noLogin()">Offline</button> </div> 
+			</div>
+			
+			<div id="menu_2">
+				<div id="game_mode">
+					<span id="text">Game Mode</span>
+					<br>
+					<div class="onoffswitch">
+    					<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+    					<label class="onoffswitch-label" for="myonoffswitch">
+        					<span class="onoffswitch-inner"></span>
+        					<span class="onoffswitch-switch"></span>
+						</label>
+					</div>
+					<br>
+				</div>
+			
+				<div id="difficulty">
+					<span>Difficulty</span>
+					<br>
+					<button onclick="create_table(5,7)">Begginer</button>
+					<br>
+					<button onclick="create_table(9,11)">Intermediate</button>
+					<br>
+					<button onclick="create_table(13,17)">Advanced</button>
+					<br>
+					<button onclick="create_table(19,23)">Expert</button>
+				</div>	
+				
+				<div id="about"> 
+					<span>About</span>
+					<br>
+					<p>The aim is complete more boxes than your opponent. You and your opponent take it in turns to join up two adjacent dots with a line. If any player fills a box they must make another move.  When all boxes have been colored, the game ends and the player who has colored more boxes wins.</p>
+				</div>
+				
+			</div>
+			
+			<div id="menu_3">    
+				<div id="time_u"></div>	
+				<div id="score_u"></div>
+				<div id="score_pc"></div>
+				<div id="restart"> <img alt="Restart" src="restart.svg"> </div>
+				<div id="back2menu"> <img alt="Settings" src="menu2.svg"> </div>
+				<div id="high_score"> <img alt="Ranking" src="high_score.svg"> </div>
+				<div id="logout"> <img alt="Log Out" src="menu1.svg"> </div>
+			</div>
+	
+			<div id="game_over"></div>
+			
+			<div id="menu_4">
+				<div id="beg">Begginer</div>
+				<div id="int">Intermediate</div>
+				<div id="adv">Advanced</div>
+				<div id="exp">Expert</div>
+				<div id="b2menu3"> <img alt="Log Out" src="menu3.svg"> </div>
+			</div>
+			
+        </div>
+		
+    </body>
+</html>
